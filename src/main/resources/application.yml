@@ -1,0 +1,9 @@
+server:
+  port:    9080
+  
+statistics:
+  address:            172.31.2.92
+  port:               2003
+  reportingInterval:  7
+
+    
