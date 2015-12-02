@@ -1,8 +1,12 @@
+spring:
+  config:
+    name: Stastistics collector [collect-statistics]
+        
 server:
   port:    9080
   
 statistics:
-  address:            172.31.2.92
+  address:            rd-statistics.rd-tools.addvalueit.svc.tutum.io
   port:               2003
   reportingInterval:  7
 

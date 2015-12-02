@@ -1,0 +1,67 @@
+                                              :                                                                                                       
+                                            FOB.                                                                                        
+                                         :@@@M@G                                                                                        
+                       1                B@MEEZB                                                                                         
+                      @BB             rB@qZEqBu                                                                                         
+                     @B0B            @BZEGZEB@                                                                                          
+                    ,B00@           @B0ZGEEM@                                                                                           
+                    @@0ZB          @BEZGEZM@                                                                                            
+          :B.       @8G0@         @MEZGEEB@                                                                                             
+          i@Bj      BEZO@        @MZZ8Z0B@                                                                                              
+           BZBi    ,@0ZB@       @BEE8E0B@                                                                                               
+           LBPB    iBZ0@j      @BEEG0M@0                                                                                                
+            @B@B   .@0ZB      :@NEEE@B                                                                                                  
+    B@:      @B@    B0@1      BMNG@@0                                                                                                   
+     B@BU     @BY   kB@       @@@B@                                                                                                     
+      ,@B@:    v              Z@v                                                                                                       
+         O@:                                                                                                                            
+ .i                                                                                                                                     
+ .@B@B@8                                                                                                                                
+      :v                                                                                                                                
+                                            @@              5@X                                 8B1                                     
+                                            B@              i@r                                 v@i                                     
+                    2NMBMS:         vZ@B07  @B      ,UMBMF: .Br Mj             2S  :qM@BMU      LB;  ,2          Jr      :0B@ML         
+                   .BMPX0@@@7    ;B@BMkXB@B@0@    M@B@ESN@B@M@v 7@B           B@   @BM0EB@@@    v@i  OB2         @B    @B@BOkBB@B.      
+                           X@   @Bk        L@B   B@.        MBv   @@         @@            @@   LB;  L@:         BB  ,@B        @BX     
+                     .r5G@@N@r uBv          B@  B@          .@r   ,@B       B@       :L8B@BMB   v@i  jBi         @B  @B          8@,    
+                  FB@B@BOFiu@, B@           @B  @k          rB7    i@@     B@     @B@@@BOuiB@   LBr  Y@i         B@ rBNB@B@B@@@B@B@B    
+                 @Bi       iB, @@           B@  B@          :@r     L@E   B@    S@B        @B   v@i  uBi         @B  @G                 
+                @B         r@.  @B          @B  XB5         iB7      k@v B@.    @B         @@   LBr  P@         ,B@  B@                 
+                 @B:     ,B@B:   @@k      E@B@   FB@i     :@B@L       M@B@:     M@B      7B@B   L@r   B@     :M@@@@   B@B:      :5BM    
+                  GB@B@B@BB @Bk   iB@@@B@B@.@B     P@@@B@B@LvB5        B@v       ,@@@B@B@B7,@B. qBj    @@B@B@@@. B@     @B@@@B@B@BO.    
+                                                                                                                                        
+                                                                                                                                        
+                                     --------------------------------------------------------------                                                                        
+                                                                                                                                                                          
+                                        Mantainer:    ADD VALUE S.p.A - A different Company                                                                               
+                                        Application:  collect-statistics                                                                          
+                                        Purpose:      Standalone application to collect statistics
+                                                      and send to a Graphite collector
+                                                                                                                                
+                                        Version:      ${application.version}                                                                                              
+                                                                                                                                                                          
+                                        Powered by Spring Boot, version ${spring-boot.version}                                                                            
+                                     
+                                     --------------------------------------------------------------
+
+                                                 Java Runtime:  ${java.vm.name}
+                                                       Vendor:  ${java.vendor}
+                                                      Version:  ${java.version}
+                                                         Home:  ${java.home}
+                                                                
+                                                    Host Name:  ${COMPUTERNAME}        
+                                                       Domain:  ${USERDNSDOMAIN}      
+                                               Canonical name:  ${COMPUTERNAME}.${USERDNSDOMAIN} 
+                                                  Logged user:  ${USERNAME}                                                                                             
+                                                      Address:  ${local.hostAddress}    
+                                                                                                                    
+                                        Operating System Name:  ${os.name}                                                                                  
+                                                      Version:  ${os.version} 
+                                                                
+                                         Processor identifier:  ${PROCESSOR_IDENTIFIER}  
+                                                 Architecture:  ${PROCESSOR_ARCHITECTURE} 
+                                                        Cores:  ${NUMBER_OF_PROCESSORS}                                                                                       
+                                                                                                                                                                          
+                                     --------------------------------------------------------------                                                                        
+
+

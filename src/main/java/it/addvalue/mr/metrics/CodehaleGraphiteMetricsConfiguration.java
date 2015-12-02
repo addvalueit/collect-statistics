@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import javax.servlet.http.HttpSessionListener;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,15 +22,16 @@ import com.ryantenney.metrics.spring.config.annotation.MetricsConfigurerAdapter;
 @Configuration
 public class CodehaleGraphiteMetricsConfiguration extends MetricsConfigurerAdapter
 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CodehaleGraphiteMetricsConfiguration.class);
 
     @Value("${statistics.address}")
-    private String statisticAddress;
+    private String              statisticAddress;
 
     @Value("${statistics.port}")
-    private int    statisticPort;
-    
+    private int                 statisticPort;
+
     @Value("${statistics.reportingInterval}")
-    private int    reportingInterval;
+    private int                 reportingInterval;
 
     @Bean
     public HttpSessionListener httpSessionListener()
@@ -54,6 +57,8 @@ public class CodehaleGraphiteMetricsConfiguration extends MetricsConfigurerAdapt
         metricRegistry.registerAll(new ThreadStatesMetricsSet());
         metricRegistry.registerAll(new FileSystemMetricsSet());
 
+        LOGGER.info("Connecting with graphite on host '" + statisticAddress + "' and port: " + statisticPort);
+        
         Graphite graphite = new Graphite(new InetSocketAddress(statisticAddress, statisticPort));
         ViolentedGraphiteReporter reporter = ViolentedGraphiteReporter.forRegistry(metricRegistry)
                                                                       .prefixedWith(getHostName())
